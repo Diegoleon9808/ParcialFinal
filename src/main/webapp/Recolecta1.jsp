@@ -8,34 +8,22 @@
     </head>
     <body>   
         <h1 class="w3-center">Recoleccion</h1>   
-        <table class="w3-table-all">
-            <tr>
-                <th>Fecha</th>
-                <th>Recolector</th>
-                <th>Colmena</th>
-                <th>Kilos de miel</th>
 
-            </tr>
-        </table>
         <form action="recolectafin" method="post"> 
-
+            <p>Fecha</p>
             <input class="contact" type="text" name="fecha" value="" />
+            <p>Recolector</p>
             <input class="contact" type="text" name="recolector" value="" />
+            <p>Colmena</p>
             <input class="contact" type="text" name="colmena" value="" />
+            <p>Kilos de miel</p>          
             <input class="contact" type="text" name="cantidadMiel" value="" />
-            <input style="background-color: #ffff33" class="submit" type="submit" name="crear"  value="insertar" onClick="value = 1" >
-            <input style="background-color: #ffff33" class="submit" type="submit" name="finalizar"  value="cancelar" onClick="value = 2" >
-
-
+            <input type="submit" name="crear"  value="insertar" onClick="value = 1">
         </form>       
 
 
-        <table >
-            <tr>
-                <td> <a  href="Listado.jsp" ><input style="background-color: #33ffff"  class="submit" type="submit" name="listar_todo" value="Listar todo" /> </td>
+        <a href="Listado.jsp">Listar Todo</a>
 
-            </tr>
-        </table>  
 
     </body>
 </html>
