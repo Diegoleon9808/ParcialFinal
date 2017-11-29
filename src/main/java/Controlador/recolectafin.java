@@ -51,13 +51,13 @@ public class recolectafin extends HttpServlet {
                 } catch (SQLException ex) {
                     Logger.getLogger(recolectafin.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                request.getRequestDispatcher("recolecta1.jsp").forward(request, response);
+                request.getRequestDispatcher("Recolecta1.jsp").forward(request, response);
 
             }
 
             if (finalizar == 2) {
 
-                request.getRequestDispatcher("recolecta1.jsp").forward(request, response);
+                request.getRequestDispatcher("Recolecta1.jsp").forward(request, response);
 
             }
 
