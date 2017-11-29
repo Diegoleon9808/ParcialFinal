@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class Recolecta extends HttpServlet {
+public class recolectafin extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -49,7 +49,7 @@ public class Recolecta extends HttpServlet {
                 try {
                     cr1.insert(final1);
                 } catch (SQLException ex) {
-                    Logger.getLogger(Recolecta.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(recolectafin.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 request.getRequestDispatcher("recolecta1.jsp").forward(request, response);
 
