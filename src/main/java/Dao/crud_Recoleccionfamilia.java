@@ -37,16 +37,16 @@ public class crud_Recoleccionfamilia {
 
                 recoleccionfamilia registro = new recoleccionfamilia();
 
-                Fecha = rs.getString("Fecha");
+                Fecha = rs.getString("fecha");
                 registro.setFecha(Fecha);
 
-                Recolector = rs.getString("Recolector");
+                Recolector = rs.getString("recolector");
                 registro.setRecolector(Recolector);
 
-                Colmena = rs.getString("Colmena");
+                Colmena = rs.getString("colmena");
                 registro.setColmena(Colmena);
 
-                CantidadMiel = rs.getInt("CantidadMiel");
+                CantidadMiel = rs.getInt("cantidadMiel");
                 registro.setCantidadMiel(CantidadMiel);
                 
                 departamentos.add(registro);
@@ -64,7 +64,7 @@ public class crud_Recoleccionfamilia {
     public boolean insert(recoleccionfamilia t) throws SQLException {
         boolean result = false;
         Connection connection = Conexion.getConnection();
-        String query = " insert into recoleccionfamilia (Fecha,Recolector,Colmena,CantidadMiel) " + "values (?,?,?,?)";
+        String query = " insert into recoleccionfamilia (fecha,recolector,colmena,cantidadmiel) " + "values (?,?,?,?)";
         PreparedStatement preparedStmt = null;
         try {
             preparedStmt = connection.prepareStatement(query);
