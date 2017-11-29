@@ -55,7 +55,7 @@ and open the template in the editor.
 
         <table >
             <tr>
-                <td> <a  href="recoleccion.jsp" ><input style="background-color: #33ffff"  class="submit" type="submit" name="Volver" value="Volver a visitar" /> </td>
+                <td> <a  href="Recolecta.jsp" ><input style="background-color: #33ffff"  class="submit" type="submit" name="Volver" value="Volver a visitar" /> </td>
 
             </tr>
         </table>

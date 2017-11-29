@@ -29,7 +29,7 @@ and open the template in the editor.
                 <th><strong>Kilos de miel</strong></th>
 
             </tr>
-            <form action="Recoleccion" method="post"> 
+            <form action="Recolecta" method="post"> 
                 <tr >
 
                     <td><input class="contact" type="text" name="fecha" value="" /></td>
