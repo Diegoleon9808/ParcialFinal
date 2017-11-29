@@ -5,7 +5,6 @@
  */
 package Dao;
 
-import Vo.recoleccionfi;
 import Vo.recolector;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -59,58 +58,6 @@ public class Crud_recolector {
         return departamentos;
     }
 
-//    public boolean insert(recoleccionfi t) throws SQLException {
-//        boolean result = false;
-//        Connection connection = Conexion.getConnection();
-//        String query = " insert into recoleccionfi (Fecha,Recolector,Colmena,Kilosdemiel) " + "values (?,?,?,?)";
-//        PreparedStatement preparedStmt = null;
-//        try {
-//            preparedStmt = connection.prepareStatement(query);
-//            preparedStmt.setString(1, t.getFecha());
-//            preparedStmt.setString(2, t.getRecolector());
-//            preparedStmt.setString(3, t.getColmena());
-//            preparedStmt.setString(4, t.getKilosdemiel());
-//            result = preparedStmt.execute();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return result;
-//    }
-//
-//    public boolean update(Esquema t) throws SQLException {
-//        boolean result = false;
-//        Connection connection = Conexion.getConnection();
-//        String query = "update Schemaa set NameSchema = ? where Idschema = ?";
-//        PreparedStatement preparedStmt = null;
-//        try {
-//            preparedStmt = connection.prepareStatement(query);
-//            preparedStmt.setString(1, t.getNameEsquema());
-//            preparedStmt.setInt(2, t.getIdEsquema());
-//            if (preparedStmt.executeUpdate() > 0) {
-//                result = true;
-//            }
-//
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return result;
-//    }
-//
-//    public boolean delete(Esquema t) throws SQLException {
-//        boolean result = false;
-//        Connection connection = Conexion.getConnection();
-//        String query = "delete from Schemaa where Idschema = ?";
-//        PreparedStatement preparedStmt = null;
-//        try {
-//            preparedStmt = connection.prepareStatement(query);
-//            preparedStmt.setInt(1, t.getIdEsquema());
-//            result = preparedStmt.execute();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return result;
-//    }
+
 
 }

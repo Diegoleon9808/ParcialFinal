@@ -33,13 +33,13 @@ and open the template in the editor.
 
         <%
 
-            operaciones op = new operaciones();
+            operaciones oper = new operaciones();
 
-            Iterator it = op.listar().keySet().iterator();
+            Iterator it = oper.listar().keySet().iterator();
 
             while (it.hasNext()) {
                 Integer key = (Integer) it.next();
-                out.println("<h1> " + op.listar().get(key) + "----------------" + key + "</h1>");
+                out.println("<h1> " + oper.listar().get(key) + "----------------" + key + "</h1>");
 
             }
 

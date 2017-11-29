@@ -9,21 +9,21 @@ package Vo;
  *
  * @author JCBOT
  */
-public class recoleccionfi {
+public class recoleccionfamilia {
 
     private String Fecha;
     private String Recolector;
     private String Colmena;
-    private int Kilosdemiel;
+    private int CantidadMiel;
 
-    public recoleccionfi(String Fecha, String Recolector, String Colmena, int Kilosdemiel) {
+    public recoleccionfamilia(String Fecha, String Recolector, String Colmena, int CantidadMiel) {
         this.Fecha = Fecha;
         this.Recolector = Recolector;
         this.Colmena = Colmena;
-        this.Kilosdemiel = Kilosdemiel;
+        this.CantidadMiel = CantidadMiel;
     }
 
-    public recoleccionfi() {
+    public recoleccionfamilia() {
     }
 
     public String getFecha() {
@@ -50,13 +50,14 @@ public class recoleccionfi {
         this.Colmena = Colmena;
     }
 
-    public int getKilosdemiel() {
-        return Kilosdemiel;
+    public int getCantidadMiel() {
+        return CantidadMiel;
     }
 
-    public void setKilosdemiel(int Kilosdemiel) {
-        this.Kilosdemiel = Kilosdemiel;
+    public void setCantidadMiel(int CantidadMiel) {
+        this.CantidadMiel = CantidadMiel;
     }
+
 
 
     

@@ -5,7 +5,7 @@
  */
 package Dao;
 
-import Vo.recoleccionfi;
+import Vo.recoleccionfamilia;
 import Vo.recolector;
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -21,9 +21,9 @@ public class operaciones {
     public Map<Integer, String> listar() throws SQLException {
 
         Crud_recolector re = new Crud_recolector();
-        Crud_recoleccion recolec = new Crud_recoleccion();
+        crud_Recoleccionfamilia recolec = new crud_Recoleccionfamilia();
         List<recolector> application1 = re.findAll();
-        List<recoleccionfi> application2 = recolec.findAll();
+        List<recoleccionfamilia> application2 = recolec.findAll();
         Map<Integer, String> map2 = new HashMap<Integer, String>();
         String colmenatemp = null;
         int cantidad_kilos = 0;
@@ -35,7 +35,7 @@ public class operaciones {
             for (int j = 0; j < application2.size(); j++) {
                 cantidad_kilos=0;
                 if (colmenatemp == application2.get(i).getColmena()) {
-                    cantidad_kilos = cantidad_kilos + application2.get(i).getKilosdemiel();
+                    cantidad_kilos = cantidad_kilos + application2.get(i).getCantidadMiel();
                 }
 
             }

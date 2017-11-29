@@ -32,12 +32,12 @@ and open the template in the editor.
             <form action="Recoleccion" method="post"> 
                 <tr >
 
-                    <td><input class="contact" type="text" name="Fecha" value="" /></td>
-                    <td><input class="contact" type="text" name="Recolector" value="" /></td>
-                    <td><input class="contact" type="text" name="Colmena" value="" /></td>
-                    <td><input class="contact" type="text" name="Kilosdemiel" value="" /></td>
-                    <td ><input style="background-color: #ffff33" class="submit" type="submit" name="insertar"  value="insertar" onClick="value = 1" > <td> 
-                    <td> <input style="background-color: #ffff33" class="submit" type="submit" name="cancelar"  value="cancelar" onClick="value = 2" > <td>
+                    <td><input class="contact" type="text" name="fecha" value="" /></td>
+                    <td><input class="contact" type="text" name="recolector" value="" /></td>
+                    <td><input class="contact" type="text" name="colmena" value="" /></td>
+                    <td><input class="contact" type="text" name="cantidadMiel" value="" /></td>
+                    <td ><input style="background-color: #ffff33" class="submit" type="submit" name="crear"  value="insertar" onClick="value = 1" > <td> 
+                    <td> <input style="background-color: #ffff33" class="submit" type="submit" name="finalizar"  value="cancelar" onClick="value = 2" > <td>
             </form>
 
 
@@ -54,7 +54,7 @@ and open the template in the editor.
 
         <table >
             <tr>
-                <td> <a  href="list.jsp" ><input style="background-color: #33ffff"  class="submit" type="submit" name="Mostar_todo" value="Mostar Todo" /> </td>
+                <td> <a  href="listado.jsp" ><input style="background-color: #33ffff"  class="submit" type="submit" name="listar_todo" value="Listar todo" /> </td>
               
             </tr>
         </table>
