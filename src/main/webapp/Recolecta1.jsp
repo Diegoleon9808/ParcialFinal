@@ -54,7 +54,7 @@ and open the template in the editor.
 
         <table >
             <tr>
-                <td> <a  href="listado.jsp" ><input style="background-color: #33ffff"  class="submit" type="submit" name="listar_todo" value="Listar todo" /> </td>
+                <td> <a  href="Listado.jsp" ><input style="background-color: #33ffff"  class="submit" type="submit" name="listar_todo" value="Listar todo" /> </td>
               
             </tr>
         </table>
