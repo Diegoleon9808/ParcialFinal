@@ -18,10 +18,10 @@
             <input class="contact" type="text" name="colmena" value="" />
             <p>Kilos de miel</p>          
             <input class="contact" type="text" name="cantidadMiel" value="" />
+            <br>
             <input type="submit" name="crear"  value="insertar" onClick="value = 1">
-        </form>       
-
-
+        </form>
+        <br>
         <a href="Listado.jsp">Listar Todo</a>
 
 
